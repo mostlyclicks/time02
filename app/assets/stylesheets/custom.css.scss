@@ -5,3 +5,163 @@
     color:#ffffff;
   }
 }
+
+#top {
+  padding-top:60px;
+  //background-image:url('top-bg-3.png');
+  background-position-y:100%;
+  background-position-x:50%;
+  background-repeat:no-repeat;
+  height:100%;
+  width:100%;
+  img {
+    border:10px solid rgba(200,200,200,.1);
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight:200;
+    font-size:18px;
+  }
+  h4 {
+    font-weight: 200;
+  }
+  a {
+    color:#d2232a;
+
+  }
+}
+
+.navbar-brand {
+  img {
+    margin-top:-7px;
+  }
+  
+}
+
+.navbar {
+  height:65px;
+
+}
+
+
+
+.navbar-right {
+  margin-top:5px;
+}
+
+
+#about {
+
+}
+
+#made-in-france {
+  background-image:url('made-in-france-red.jpg');
+  background-size:cover;
+  height:100%;
+
+
+  .lead {
+    color:rgba(255,255,255,1);
+    font-size:28px;
+  }
+
+
+}
+
+#time-bikes-feature {
+  // background-image:url('bg-SKYLON.jpg');
+  background-size:cover;
+  height:100%;
+  #home-bikes-txt {
+    margin-top:0px;
+    border-left:2px solid red;
+    padding-left:30px;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:rgba(255,255,255,.4);
+    height:100%;
+  }
+  #bike-image {
+    margin-left:-270px;margin-top:70px;
+  }
+
+  .carousel-control.right, .carousel-control.right {
+    background-image:none;
+    //top:-170px !important;
+
+  }
+
+  .carousel-control {
+    top:95%;
+  }
+
+}
+
+#time-bikes {
+  padding:40px 0 100px 0;
+  height:100%;
+  h2 {
+    text-transform: uppercase;
+  }
+  .row {
+    padding:20px 0px;
+  }
+  h5 {
+    font-weight:200;
+  }
+}
+
+#aktiv {
+  color:rgba(255,255,255,.7);
+  background-color:#000;
+
+  #aktiv-izon {
+    margin-left:-650px;margin-bottom:-100px;
+  }
+  margin-bottom:80px;
+  #aktiv-txt {
+    padding-top:100px;
+    border-left:2px solid red;
+    padding-left:30px;
+    padding-bottom:50px;
+    
+    h3 {
+      color:rgba(255,255,255,1);
+      font-weight:200;
+    }
+  }
+}
+
+#time-pedals {
+  padding:50px 0;
+  height:100%;
+  #feature-pedal {
+
+  }
+  #pedal-txt {
+    padding-top:100px;
+    border-left:2px solid red;
+    padding-left:30px;
+    padding-bottom:50px;
+
+  }
+}
+
+.dealers {
+  h1 {
+    color:#fff;
+    font-weight:200;
+    text-transform: uppercase;
+    text-shadow:1px 1px 20px #000;
+
+  }
+    background: url('/assets/contender_6.jpg') no-repeat center center fixed;
+    width:100%;
+    padding: 70px 0;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position: relative;
+}
+

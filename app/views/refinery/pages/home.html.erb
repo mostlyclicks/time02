@@ -1,12 +1,12 @@
 <%#= render '/refinery/content_page' %>
 
-<section id="home" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="">
+<!--         <section id="home" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="">
             <div class="parallax-overlay"></div> 
             <div class="home-content text-center">
                 <div class="container">
                     <div class="row">
                       <div class="col-lg-4 col-lg-offset-4">
-                      <%= image_tag 'logo.png', class: 'img-responsive' %>
+                      <%#= image_tag 'logo.png', class: 'img-responsive' %>
                     </div>
                       
                     </div>
@@ -32,18 +32,22 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="navigation">
-            <div class="navbar navbar-default navbar-static-top" role="navigation">
+        </section> -->
+
+
+        <section id="navigation" >
+            <div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:rgba(250,250,250,.8);">
                 <div class="container">
-                    <div class="navbar-header">
+                    <div class="navbar-header navbar-left">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">(312) 379-0256</a>
+                        <a class="navbar-brand" href="index.html">
+                            <%= image_tag 'logo.png', class: 'img-responsive' %>
+                        </a>
                     </div>
                     <div class="navbar-collapse collapse">
 
@@ -68,550 +72,323 @@
                 </div><!--/.container -->
             </div>
         </section><!--navigation section end here-->
-        <section id="about" class="padding-80">
+
+
+
+        
+
+
+
+
+        <section id="top" style="background-image:url('assets/<%= @show_home_bg %>');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+                                <h1>Welcome to TIME Sport USA!</h1>
+                                <!-- <h4>The most innovative, hand-crafted frames and bicycle pedals in the world, all 100% MADE IN FRANCE!</h3> -->
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-4 text-center">
+                                <a href="#time-pedals" class="scroll-btn"><h2>Pedals</h2>
+                                <%= image_tag 'top-pedal.png', class: 'img-responsive img-circle' %>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <a href="#time-bikes-feature" class="scroll-btn"><h2>Bike/Frames</h2>
+                                <%= image_tag 'top-bike-4.png', class: 'img-responsive img-circle' %>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4 text-center">
+                                <a href="#aktiv" class="scroll-btn"><h2>Technologies</h2>
+                                <%= image_tag 'top-AKTIV.png', class: 'img-responsive img-circle' %>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                                    <div class="home-arrow-down text-center">
+                        <p><a href="#made-in-france" class="btn" style="color:#d2232a;">MADE IN FRANCE<br />
+                            <%= image_tag 'made-in-france-bars.png', width: '100', style: 'border:none;' %><br />
+                        <span class="fa fa-chevron-down fa-4x"></span></a></p>
+                        </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+        <section id="made-in-france" class="padding-80"><!-- #about -->
 
             <!--about page content-->
             <div class="about-section">
                 <div class="container">
                     <div class="section-heading text-center">
                         <!-- <h4 class="small section-title"><span>We love what we do?</span></h4> -->
-                        <h2 class="large section-title">About Erie Collison Center</h2>
+                        <h2 class="large section-title" style="font-weight:100;color:#fff;">MADE IN FRANCE</h2>
+                        <%= image_tag 'made-in-france-bars.png', width: '200' %>
                     </div><!--section heading-->             
 
                 </div><!--container-->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-8 col-sm-8 col-md-offset-2">
                             <div class="about-box wow animated fadeInDown" data-wow-duration="0.3s">
                                 <div class="about-box-icon">
                                     <i class="ion-ios7-lightbulb-outline"></i>
                                 </div>
-                                <div class="about-box-text">
-                                    <h4>Experience</h4>
-                                    <p>
-                                        As a company, Erie Collision Center has over 65 years in the auto industry. We have 3 Gold I-Car ceritfied body technicians, mechanics and painters ready to get your car looking and running like new.
-                                    </p>
-                                </div>
-                            </div><!--about us box end-->
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="about-box wow animated fadeInDown" data-wow-delay="0.5">
-                                <div class="about-box-icon">
-                                    <i class="ion-ios7-infinite-outline"></i>
-                                </div>
-                                <div class="about-box-text">
-                                    <h4>Accurate Estimates</h4>
-                                    <p>
-                                        We also have in-house expertise in estimating. We aim to deliver accurate estimates on what your parts and labor will cost so there are no surprises and you happy with what you paid for.
-                                    </p>
-                                </div>
-                            </div><!--about us box end-->
-                        </div>
-                    </div><!--about services row end--> 
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="about-box wow animated fadeInDown" data-wow-delay="0.6s">
-                                <div class="about-box-icon">
-                                    <i class="ion-ios7-star-outline"></i>
-                                </div>
-                                <div class="about-box-text">
-                                    <h4>Full Service Facilities </h4>
-                                    <p>
-                                        Erie Collision Center has the right tools and facilities to get the job done right all under one roof. Our facilities include a chief select bench scissor lift frame machine with a state-of-the-art shark measuring system, a 10,000 lbs mechanical lift and a concept blow therm 1000 spray booth.
-                                    </p>
-                                </div>
-                            </div><!--about us box end-->
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="about-box wow animated fadeInDown" data-wow-delay="0.8s">
-                                <div class="about-box-icon">
-                                    <i class="ion-person-stalker"></i>
-                                </div>
-                                <div class="about-box-text">
-                                    <h4>Technology </h4>
-                                    <p>
-                                        We use the state-of-the-art software to get cost effective parts for your car as well the BASF refinishing system to accurately match the paint of your car.
-                                    </p>
-                                </div>
-                            </div><!--about us box end-->
-                        </div>
-                    </div><!--about services row end--> 
-                    <% content_for :grid do %>
-                    <div class="about-section-more">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="about-more-info wow animated fadeInUp" data-wow-delay="0.3s">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="skills-wrapper wow animated bounceIn" data-wow-delay="0.6s">
-                                    <h3 class="heading-progress">Web Design <span class="pull-right">88%</span></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 88%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" role="progressbar">
-                                        </div>
-                                    </div>
-                                    <h3 class="heading-progress">Web Development <span class="pull-right">78%</span></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 78%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" role="progressbar">
-                                        </div>
-                                    </div>
-                                    <h3 class="heading-progress">Marketing <span class="pull-right">82%</span></h3>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 82%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" role="progressbar">
-                                        </div>
-                                    </div>                    
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--section about 3 end-->
+                                <div class="about-box-text" >
+                                    
+                                    <p class="lead" style="">
+                                        Yes, Made in France! 100%. Our carbon fiber starts out as a thread. We weave them together in specific angles and with different types of material to get the ride we are looking for. Through our RTM process we control the thickness and shape of each tube. So much so, that our frames look as good on the inside as they do the outside.</p>
 
-                    
-                </div>
-            </div>
+                                        <p class="lead"> What you get is a work of art that comes straight from France that has all the qualities of a great ride: stiffness, lightness and comfort.
+                                    </p>
+                                </div>
+                            </div><!--about us box end-->
+                        </div>
 
-            <div class="purchase-now">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h1 class="wow animated fadeInLeft" data-wow-delay="0.3s">Using Design as a <strong>Business</strong> Strategy</h1>
-                        </div>
-                        <div class="col-sm-4">
-                            <a href="#" class="btn btn-lg btn-theme-color wow animated bounceIn" data-wow-delay="0.6s"> Purchase Now</a>
-                        </div>
+                    </div><!--about services row end--> 
+                                       <div class="home-arrow-down text-center">
+                        <p><a href="#time-bikes-feature" class="btn btn-lg btn-theme-color">See What's New<br />
+                        <span class="fa fa-chevron-down fa-4x"></span></a></p>
                     </div>
+
                 </div>
-            </div>
-            <% end %>
-            <!--page about content end here-->            
+                    
+                            
         </section>
 
         <!--about section end here-->
 
-
-
-
-
-        <% content_for :services do %>
-
-        <!--section services start here-->
-
-        <section id="services" class="padding-80">
-
-
-            <div class="services-section-1">
-                <div class="container">
-                    <div class="section-heading text-center">
-                        <h4 class="small section-title"><span>What we do?</span></h4>
-                        <h2 class="large section-title">Our Services</h2>
-                    </div><!--section heading-->             
-
-                </div><!--container-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="margin-btm-40">
-                                <h4>Flexibility built in</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. Donec vitae dolor lectus. Etiam facilisis rutrum vestibulum. In at ligula vitae lectus porta posuere vel vel est. Aliquam interdum mi vitae arcu fermentum iaculis. Sed feugiat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 wow animated fadeInLeft" data-wow-delay="0.3s">
-
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-images"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Website design</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-speakerphone"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Marketing </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-leaf"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Logo design </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-speedometer"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Search engine optimization(seo) </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                        </div>
-                        <div class="col-md-6 wow animated fadeInRight" data-wow-delay="0.6s">
-
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-images"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Website design</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-speakerphone"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Marketing </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-leaf"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Logo design </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                            <div class="row margin-btm-20">
-                                <div class="col-md-2">
-                                    <div class="services-icon">
-                                        <i class="ion-speedometer"></i>
-                                    </div> 
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="services-info">
-                                        <h3>Search engine optimization(seo) </h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!--.services row end-->
-                        </div>
-                    </div>
+        <section id="time-bikes-feature">
+            <div class="container-fluid" style="margin:0px;padding:0px;">
+                <div class="row">
+                    <div class="col-lg-12"></div>
                 </div>
-            </div><!--services section 1 end-->
-            <% content_for :subscribe do %>
-            <div class="services-section-2 wow animated fadeInUp" data-wow-delay=".4s">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h1>Subscribe to Newsletter</h1>
-                            <form class="newsletter-form">
-                                <div class="row">
-                                    <div class="col-sm-4 col-sm-offset-4">
-                                        <div class="input-group">
-                                            <label class="sr-only" for="subscribe-email">Email address</label>
-                                            <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
-                                            <span class="input-group-btn">
-                                                <button type="submit" class="btn btn-theme-color btn-lg">OK</button>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div><!--services section 1 end-->
-            <% end %>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active" style="background-image:url('assets/bg-SKYLON.jpg');">
+        <div class="row">
+            <div class="col-lg-8">
+                <%= image_tag 'Skylon-AKTIV-Team_bike.png', class: '1-img-responsive', id: 'bike-image' ,style: '' %>
+            </div>
+            <div class="col-lg-3  wow animated bounceIn" id="home-bikes-txt">
+                <%= image_tag 'SKYLON-LOGO-black.png', class: 'img-responsive' %>
+                <h1>Explosivity<br />Power<br />Precision</h1>
+                <p class="lead">Made in France TIME weaving technic will provide the explosivity you need to breakaway and keep your rythmn against the wind.</p>
+                <%= button_tag 'READ MORE', class: 'btn btn-danger' %>
+            </div>
+            <div class="home-arrow-down text-center">
+                <p><a href="#time-bikes" class="btn" style="margin-top:180px;color:#fff  ;font-weight:bold;">See Our 2015 Collection<br />
+                <span class="fa fa-chevron-down fa-4x"></span></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="item" style="background-image:url('assets/izon-bg.jpg');">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <%= image_tag 'Izon-AKTIV-red_bike.png', class: '1-img-responsive', id: 'bike-image' ,style: '' %>
+            </div>
+            <div class="col-lg-3  wow animated bounceIn" id="home-bikes-txt">
+                <%= image_tag 'IZON-LOGO-black.png', class: 'img-responsive' %>
+                <h1>Explosivity<br />Power<br />Precision</h1>
+                <p class="lead">Made in France TIME weaving technic will provide the explosivity you need to breakaway and keep your rythmn against the wind.</p>
+                <%= button_tag 'READ MORE', class: 'btn btn-danger' %>
+            </div>
+            <div class="home-arrow-down text-center">
+                <p><a href="#time-bikes" class="btn" style="margin-top:180px;color:#fff  ;font-weight:bold;">See Our 2015 Collection<br />
+                <span class="fa fa-chevron-down fa-4x"></span></a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="item" style="background-image:url('assets/fuidity-bg.jpg');">
+        <style>
+        #time-bikes-feature {}
+        </style>
+        <div class="row">
+            <div class="col-lg-8">
+                <%= image_tag 'Fluidit-AKTIV-black_bike.png', class: '1-img-responsive', id: 'bike-image' ,style: '' %>
+            </div>
+            <div class="col-lg-3  wow animated bounceIn" id="home-bikes-txt">
+                <%= image_tag 'FLUIDITY-LOGO-black.png', class: 'img-responsive' %>
+                <h1>Explosivity<br />Power<br />Precision</h1>
+                <p class="lead">Made in France TIME weaving technic will provide the explosivity you need to breakaway and keep your rythmn against the wind.</p>
+                <%= button_tag 'READ MORE', class: 'btn btn-danger' %>
+            </div>
+            <div class="home-arrow-down text-center">
+                <p><a href="#time-bikes" class="btn" style="margin-top:180px;color:#fff  ;font-weight:bold;">See Our 2015 Collection<br />
+                <span class="fa fa-chevron-down fa-4x"></span></a></p>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
         </section>
-        <% end %>
-        <!--section services end here-->
 
 
-<% content_for :portfolio do %>
 
-        <!--our work section start here-->
-        <section id="work" class="padding-80">
 
-            <div class="work-section-1">
-                <div class="container">
-                    <div class="section-heading text-center">
-                        <h4 class="small section-title"><span>Latest portfolio</span></h4>
-                        <h2 class="large section-title">Our work</h2>
-                    </div><!--section heading-->
+
+
+
+
+
+
+
+
+
+        <section id="time-bikes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center"><h1>The Collection - 2015</h1></div>
+
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="portfolio-filters text-center">
-                                <li class="filter active" data-filter="all">all</li>
-                                <li class="filter" data-filter="design">design</li>
-                                <li class="filter" data-filter="html">HTML5</li>
-                                <li class="filter" data-filter="wordpress">Wordpress</li>
-                                <li class="filter" data-filter="seo">Seo</li>
-                            </ul><!--.portfolio-filter nav-->
+                <div class="row">
+                    <div class="col-lg-3 text-center"><h2>Aero</h2></div>
+                    <div class="col-lg-3 text-center"><h2>Altitude</h2></div>
+                    <div class="col-lg-3 text-center"><h2>Endurance</h2></div>
+                    <div class="col-lg-3 text-center"><h2>Velodrome</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 text-center"><%= image_tag 'Skylon-AKTIV-plasma_bike.png', class: 'img-responsive' %>
+                        <h5>SKYLON | AKTIV</h5></div>
+                    <div class="col-lg-3 text-center"><%= image_tag 'Izon-AKTIV-red_bike.png', class: 'img-responsive' %>
+                        <h5>IZON | AKTIV</h5></div>
+                    <div class="col-lg-3 text-center"><%= image_tag 'Fluidit-AKTIV-black_bike.png', class: 'img-responsive' %>
+                        <h5>FLUIDITY | AKTIV</h5></div>
+                    <div class="col-lg-3 text-center"><%= image_tag 'ZXrs.png', class: 'img-responsive' %>
+                        <h5>ZXrs Piste</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 text-center"><%= image_tag 'Skylon-red_bike.png', class: 'img-responsive' %>
+                        <h5>SKYLON</h5></div>
+                    <div class="col-lg-3 text-center"><%= image_tag 'Izon-plasma_bike.png', class: 'img-responsive' %>
+                        <h5>IZON</h5>
+                    </div>
+                    <div class="col-lg-3 text-center"><%= image_tag 'Fluidity-White_bike.png', class: 'img-responsive' %>
+                        <h5>FLUIDITY</h5>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                    <div class="home-arrow-down text-center">
+                        <p><a href="#aktiv" class="btn" style="margin-top:0px;color:#000  ;font-weight:bold;">Our latest technologies<br />
+                        <span class="fa fa-chevron-down fa-4x"></span></a></p>
+                    </div>
 
-                            <div id="grid" class="row">
-                                <div class="mix col-md-3 col-sm-6 design margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img1.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
+                                                
+                    
+                    
 
-                                        <p>
-                                            Web design
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 html margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img2.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
+                </div>
 
-                                        <p>
-                                            HTML5
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 wordpress design margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img3.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
+                </div>
 
-                                        <p>
-                                            Wordpress/web Design
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 seo margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img4.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
 
-                                        <p>
-                                            Seo
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 design margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img5.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
 
-                                        <p>
-                                            Web design
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 html seo margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img6.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
 
-                                        <p>
-                                            Html/Seo
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 design wordpress margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img7.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
 
-                                        <p>
-                                            wordpress/web design
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                                <div class="mix col-md-3 col-sm-6 html wordpress margin-btm-20">
-                                    <a href="single-work.html">
-                                        <div class="image-wrapper">
-                                            <img src="/assets/img/sec-img8.jpg" class="img-responsive" alt="work-1">
-                                            <div class="image-overlay">
-                                                <p>
-                                                    View Detail
-                                                </p>
-                                            </div><!--.image-overlay-->
-                                        </div><!--.image-wrapper-->                                      
-                                    </a>
-                                    <div class="work-sesc">
+            </div>
 
-                                        <p>
-                                            wordpress/Html
-                                        </p>
-                                    </div><!--.work-desc-->
-                                </div><!--work item-->
-                            </div><!--#grid for filter items-->
-                        </div><!--.col-md-12 of portfolio filter-->
-                    </div><!--.row-->
-                </div><!--.contianer-->
-            </div><!--work section 1-->
-            <div class="work-section-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center margin-btm-40">
-                            <div class="section-heading text-center">
-                                <h2 class="large section-title">Our valuable team</h2>
-                            </div><!--section heading-->
-                        </div>
-                        <div class="col-md-12 team-line margin-btm-40 wow animated fadeInDown" data-wow-delay=".4s">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-1.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="john Doe - CEO">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-2.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Melinda - Manager">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-3.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Erick - Founder">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-4.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Edward - Developer">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-5.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Kirk - Senior Developer">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-6.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Greem - CEO, Founder">
-                                </div>
-                            </div>                 
-                        </div><!--team line -->
-                        <div class="col-md-12 team-line margin-btm-40 wow animated fadeInUp" data-wow-delay=".8s">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-7.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Steven - Graphics designer">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-8.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="henricks - Senior Designer">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-9.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Victoria - Hr">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-10.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="Anjelina - Designer">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-11.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="john Smith - Senior Hr">
-                                </div>
-                                <div class="col-md-2 col-sm-4 col-xs-12">
-                                    <img src="/assets/img/team-12.jpg" alt="team" data-toggle="tooltip" title="" data-original-title="john - Sales manager">
-                                </div>
-                            </div>                  
-                        </div><!--team line -->
-                    </div><!--.row-->
-                </div><!--.container-->
-            </div><!--team section end-->
-        </section><!--#work-section-->
+        </section>
 
-        <!--our work section end-->
+        <section id="aktiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        
+                        <%= image_tag 'Izon-AKTIV-red_bike.png', class: '1-img-responsive ', id: 'aktiv-izon' ,style: '' %>
 
-<% end %>
+                    </div>
+                    <div class="col-lg-6" id="aktiv-txt">
+                        <%= image_tag 'AKTIV-LOGO-white.png' %>
+                        <h3>With AKTIV, you will go farther, longer, faster...</h3>
+                        <p class="lead">Today, TIME are going further in their quest for performance. Following several years of research and the application of three patents, TIME introduces ACTIV,  a revolutionary fork featuring an integrated <strong>tuned mass damper,</strong> which dispels vibrations detrimental to the cyclist’s performance and comfort.</p>
+                        <p><%= button_tag 'Learn more about AKTIV', class: 'btn btn-danger' %></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="time-pedals">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" id="pedal-txt">
+                        <h1>Pedals</h1>
+                        <h3>For TIME, performance and biomechanics are one and the same</h3>
+                        <p class="lead">Only by respecting the natural movements of your legs and joints, with angular and lateral float, as well as precise adjustment to the sensation or “feel” of the float, and with adjustable Q-factor Adjustment, can you decrease the risk of joint trauma and optimize performance following 3 points : 
+                        security, ergonomics and performance.</p>
+                        <p><%= button_tag 'See our 2015 pedals', class: 'btn btn-danger' %></p>
+                    </div>
+                    <div class="col-lg-7">
+                        <%= image_tag 'TIME_Xpresso15_pers.png', class: 'img-responsive', id: 'feature-pedal' %>
+
+                    </div>
+                </div></div>
+        </section>
+
+
+
+
+
+        
+
+
+
 
 
 
@@ -700,10 +477,10 @@
 
 <% end %>
 
-            <div class="pricing-section-2">
+            <div class="dealers">
                 <div class="container text-center wow animated bounceIn">
-                    <h1>Accidents happen. Let us help</h1>
-                    <p><a href="#contact" class="btn btn-lg btn-theme-color">Contact us</a></p>
+                    <h1>Our Dealers</h1>
+                    <p><a href="#contact" class="btn btn-lg btn-theme-color">Locations</a></p>
                 </div>
             </div>
 
@@ -829,43 +606,6 @@
         <script src="/assets/javascripts/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
         <script src="/assets/javascripts/jquery.stellar.min.js" type="text/javascript"></script>
         <script src="/assets/javascripts/custom.js" type="text/javascript"></script>-->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-        
-        <script type="text/javascript">
-            var myLatlng;
-            var map;
-            var marker;
-
-            function initialize() {
-                myLatlng = new google.maps.LatLng(41.8928594,-87.6658915);
-
-                var mapOptions = {
-                    zoom: 13,
-                    center: myLatlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false,
-                    draggable: false
-                };
-                map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-                var contentString = '<p style="line-height: 20px;"><strong>Banzhow Template</strong></p><p>123 My Street, Banzhow City, CA 4567</p>';
-
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-
-                marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: 'Marker'
-                });
-
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.open(map, marker);
-                });
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+       
 
 
